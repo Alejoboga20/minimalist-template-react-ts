@@ -23,7 +23,11 @@
 			"typescript": "^4.9.4"
 		},
 		"eslintConfig": {
-			"extends": ["react-app", "react-app/jest"]
+			"extends": ["react-app", "react-app/jest", "prettier", "plugin:jsx-a11y/recommended"],
+			"plugins": ["react", "prettier", "jsx-a11y"],
+			"rules": {
+				"prettier/prettier": "error"
+			}
 		}
 	}
 }
