@@ -10,5 +10,7 @@ npx create-react-app your-app-name --template rs-react-ts
 
 ## Packages included
 
-- Prettier.
+- [Typescript](https://www.typescriptlang.org/).
 - Tailwind CSS (Follow [this guide](https://tailwindcss.com/docs/editor-setup) to setup your editor to work with tailwind css).
+- React Router Dom v6.
+- Axios.
