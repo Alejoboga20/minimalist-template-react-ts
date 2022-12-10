@@ -1,5 +1,5 @@
 {
-	"name": "@rootstrap/template-rs-react-ts",
+	"name": "cra-template-rs-react-ts",
 	"version": "0.0.1",
 	"main": "template.json",
 	"keywords": [
@@ -21,7 +21,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/rootstrap/template-rs-react-ts",
+		"url": "https://github.com/rootstrap/template-rs-react-ts.git",
 		"directory": "/"
 	},
 	"bugs": {
