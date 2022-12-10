@@ -5,7 +5,7 @@ This is a non-official Rootstrap base template for [Create React App](https://gi
 ## Usage
 
 ```
-npx create-react-app your-app-name --template rs-react-ts
+npx create-react-app your-app-name --template rootstrap-react-ts
 ```
 
 ## Packages included
