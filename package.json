@@ -13,7 +13,7 @@
 	"engines": {
 		"node": ">=10"
 	},
-	"author": "Alejo Boga <alejo.boga@rootstrap.com>",
+	"author": "Alejo Boga <alejoboga19@gmail.com>",
 	"description": "A quick start Create React App template with configurations",
 	"files": [
 		"template",
@@ -21,11 +21,11 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/rootstrap/template-rs-react-ts.git",
+		"url": "https://github.com/Alejoboga20/rootstrap-react-ts.git",
 		"directory": "/"
 	},
 	"bugs": {
-		"url": "https://github.com/rootstrap/template-rs-react-ts/issues"
+		"url": "https://github.com/Alejoboga20/rootstrap-react-ts/issues"
 	},
 	"private": false,
 	"devDependencies": {
