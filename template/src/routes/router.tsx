@@ -1,24 +1,29 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Error, Root } from 'common';
-import { AuthRoot, Signin, Signup } from 'auth';
+import { AuthRoot, Signin, Register } from 'auth';
+
+export enum Routes {
+	ROOT = '/',
+	SIGNIN = '/signin',
+	REGISTER = '/register',
+}
 
 export const router = createBrowserRouter([
 	{
-		path: '/',
+		path: Routes.ROOT,
 		element: <Root />,
 		errorElement: <Error />,
 	},
 	{
-		path: '/auth',
 		element: <AuthRoot />,
 		children: [
 			{
-				path: '/auth/signin',
+				path: Routes.SIGNIN,
 				element: <Signin />,
 			},
 			{
-				path: '/auth/register',
-				element: <Signup />,
+				path: Routes.REGISTER,
+				element: <Register />,
 			},
 		],
 	},

@@ -4,9 +4,8 @@ interface AuthMainLayoutProps {
 
 export const AuthMainLayout = ({ children }: AuthMainLayoutProps) => {
 	return (
-		<div>
-			<h1>Main Layout</h1>
-			<div>{children}</div>
+		<div className="h-screen w-screen">
+			<div className="flex flex-col items-center px-4 pt-10">{children}</div>
 		</div>
 	);
 };
