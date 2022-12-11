@@ -13,4 +13,5 @@ npx create-react-app your-app-name --template rootstrap-react-ts
 - [Typescript](https://www.typescriptlang.org/).
 - Tailwind CSS (Follow [this guide](https://tailwindcss.com/docs/editor-setup) to setup your editor to work with tailwind css).
 - React Router Dom v6.
+- React Hook Form.
 - Axios.

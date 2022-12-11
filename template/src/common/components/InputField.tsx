@@ -2,6 +2,7 @@ import { useState } from 'react';
 import cn from 'classnames';
 
 import { crossError, visibilityOff, visibilityOn } from '../';
+import { UseFormRegister } from 'react-hook-form';
 
 export const InputField = ({
 	name,
@@ -12,6 +13,7 @@ export const InputField = ({
 	disabled = false,
 	type = 'text',
 	error = '',
+	register,
 }: InputFieldProps) => {
 	const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
@@ -35,6 +37,7 @@ export const InputField = ({
 					)}
 				/>
 				<input
+					{...register(name)}
 					id={label}
 					type={isPasswordVisible ? 'text' : type}
 					disabled={disabled}
@@ -61,6 +64,7 @@ export const InputField = ({
 
 interface InputFieldProps {
 	name: string;
+	register: UseFormRegister<any>;
 	label?: string;
 	defaultValue?: string;
 	placeholder?: string;
