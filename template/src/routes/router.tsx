@@ -1,24 +1,25 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Error, Products, Root, Signin, Signup } from 'pages';
+import { Error, Root } from 'common';
+import { AuthRoot, Signin, Signup } from 'auth';
 
 export const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root />,
 		errorElement: <Error />,
+	},
+	{
+		path: '/auth',
+		element: <AuthRoot />,
 		children: [
 			{
-				path: '/products',
-				element: <Products />,
+				path: '/auth/signin',
+				element: <Signin />,
+			},
+			{
+				path: '/auth/register',
+				element: <Signup />,
 			},
 		],
-	},
-	{
-		path: '/signin',
-		element: <Signin />,
-	},
-	{
-		path: '/signup',
-		element: <Signup />,
 	},
 ]);
