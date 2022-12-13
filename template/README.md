@@ -1,4 +1,4 @@
-# Rootstrap Create-React-App Basse
+# Rootstrap Create-React-App Base
 
 This is a non-official Rootstrap base template for [Create React App](https://github.com/facebook/create-react-app) created and design to speed up you React Projetcs.
 
