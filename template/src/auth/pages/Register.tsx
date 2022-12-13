@@ -4,7 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import { RegisterFormData, RegisterSchema } from 'auth';
 import { Button, InputField } from 'common';
-import { Routes } from 'routes';
+import { RoutePaths } from 'router';
 
 const Register = () => {
 	const navigate = useNavigate();
@@ -60,7 +60,7 @@ const Register = () => {
 					label="Sign in"
 					variant="outline"
 					fullWidth
-					onClick={() => navigate(Routes.SIGNIN)}
+					onClick={() => navigate(RoutePaths.SIGNIN)}
 				/>
 			</div>
 		</>

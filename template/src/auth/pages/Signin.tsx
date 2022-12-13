@@ -1,13 +1,16 @@
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 import { SigninFormData, SigninSchema } from 'auth';
 import { Button, InputField } from 'common';
-import { Routes } from 'routes';
+import { RoutePaths } from 'router';
+import { AuthContext } from 'auth';
 
 const Signin = () => {
 	const navigate = useNavigate();
+	const { isLoading, signIn, error } = useContext(AuthContext);
 
 	const {
 		register,
@@ -18,14 +21,14 @@ const Signin = () => {
 		mode: 'onTouched',
 	});
 
-	const onSubmit = (data: SigninFormData) => {
-		console.log(data);
+	const onSubmit = async (data: SigninFormData) => {
+		await signIn(data.email, data.password);
 	};
 
 	return (
 		<>
-			<form onSubmit={handleSubmit(onSubmit)}>
-				<fieldset>
+			<form onSubmit={handleSubmit(onSubmit)} className="w-1/4">
+				<fieldset disabled={isLoading}>
 					<legend className="hidden">Signin</legend>
 					<InputField
 						label="Email"
@@ -42,8 +45,10 @@ const Signin = () => {
 						error={errors.password?.message}
 						register={register}
 					/>
-					<Button label="Log in" fullWidth type="submit" />
+					<Button label="Log in" fullWidth type="submit" disabled={isLoading} />
 				</fieldset>
+
+				{error && <p className="mt-2 text-center text-red-500">{error}</p>}
 			</form>
 
 			<div className="mt-3 rounded-lg bg-white px-8 py-6 text-center text-black">
@@ -52,7 +57,7 @@ const Signin = () => {
 					label="Sign up"
 					variant="outline"
 					fullWidth
-					onClick={() => navigate(Routes.REGISTER)}
+					onClick={() => navigate(RoutePaths.REGISTER)}
 				/>
 			</div>
 		</>
