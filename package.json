@@ -1,13 +1,14 @@
 {
-	"name": "cra-template-rootstrap-react-ts",
-	"version": "0.0.3",
+	"name": "cra-template-minimalist-react-ts",
+	"version": "0.0.1",
 	"main": "template.json",
 	"keywords": [
 		"react",
 		"create-react-app",
 		"cra-template",
 		"template",
-		"rootstrap"
+		"minimalist",
+		"typescript"
 	],
 	"license": "MIT",
 	"engines": {
@@ -21,11 +22,11 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Alejoboga20/rootstrap-react-ts.git",
+		"url": "https://github.com/Alejoboga20/minimalist-template-react-ts.git",
 		"directory": "/"
 	},
 	"bugs": {
-		"url": "https://github.com/Alejoboga20/rootstrap-react-ts/issues"
+		"url": "https://github.com/Alejoboga20/minimalist-template-react-ts/issues"
 	},
 	"private": false,
 	"devDependencies": {

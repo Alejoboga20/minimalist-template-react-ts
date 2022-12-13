@@ -1,11 +1,11 @@
-# Rootstrap Create-React-App Base
+# Minimalist Create-React-App Template
 
-This is a non-official Rootstrap base template for [Create React App](https://github.com/facebook/create-react-app).
+This is a minimalist react template for [Create React App](https://github.com/facebook/create-react-app), which supports `Typescript, Tailwind, React-Router-Dom@6, React-Hook-Form`, etc. out of the box.
 
 ## Usage
 
 ```
-npx create-react-app your-app-name --template rootstrap-react-ts
+npx create-react-app your-app-name --template minimalist-react-ts
 ```
 
 ## Packages included
